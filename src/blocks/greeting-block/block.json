@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+    "apiVersion": 2,
+    "name": "greeting-api/greeting-block",
+    "version": "0.1.0",
+    "title": "Greeting API",
+    "category": "widgets",
+    "icon": "smiley",
+    "description": "Lets the admin send and receive a greeting to another Wordpress Site.",
+    "textdomain": "greeting-api",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.scss",
+    "style": "file:./style.scss",
+
+    "attributes": {
+        "greeting": {
+            "type": "string"
+        },
+        "wordpressUrl": {
+            "type": "string"
+        },
+        "clientId": {
+            "type": "string"
+        },
+        "clientSecret": {
+            "type": "string"
+        }
+    }
+}
